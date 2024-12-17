@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 207, 152);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Definindo a animação do gradiente */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header {
+    background: linear-gradient(45deg, #ff7f50, #6a5acd);
+    background-size: 400% 400%; /* Tamanho do fundo do gradiente */
+    animation: gradientAnimation 10s ease infinite; /* Animando o gradiente */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    background: linear-gradient(45deg, #ff7f50, #6a5acd);
+    background-size: 400% 400%; /* Tamanho do fundo do gradiente */
+    animation: gradientAnimation 10s ease infinite; /* Animando o gradiente */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    max-width: 50%;
+}
